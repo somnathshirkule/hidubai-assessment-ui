@@ -1,0 +1,15 @@
+<div class="form" id="login-form">
+    <div class="container">
+      <label class="title">{{utility.getLabel('LOGIN_TITLE')}}</label><hr>
+      <label for="uname"><b>{{utility.getLabel('EMAIL')}}</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" [(ngModel)]="user.email" (blur) = "emailErrorMsg = utility.validateField('login.email',user.email)">
+      <p class="errormsg">{{emailErrorMsg}}</p>
+      <label for="psw"><b>{{utility.getLabel('PWD')}}</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="user.password" (blur) = "pwdErrorMsg = utility.validateField('login.password',user.password)">
+      <p class="errormsg">{{pwdErrorMsg}}</p>
+      <button class="submit-btn" (click) = "onSubmit()"><b>{{utility.getLabel('LOGIN')}}</b></button><br><br>
+      <p style="text-align: center;">{{utility.getLabel('NOT_A_MEM')}}<a (click) = "routeToSignUp()">{{utility.getLabel('SIGNUP')}}</a></p>
+    </div>
+</div>
+
+<app-ui-modals #uimodals></app-ui-modals>

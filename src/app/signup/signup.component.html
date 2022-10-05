@@ -1,0 +1,41 @@
+<div class="form">
+    <div class="container">
+      <label class="title">{{utility.getLabel('SIGNUP_TITLE')}}</label><hr>
+      <div *ngIf = "utility.isEnabled('signup.firstName')">
+        <label for="fname"><b>{{utility.getLabel('FNAME')}}</b></label>
+        <input type="text" placeholder="Enter First Name" name="fname" [(ngModel)]="user.firstName" (blur) = "fnameErrorMsg = utility.validateField('signup.firstName',user.firstName)">
+        <p class="errormsg">{{fnameErrorMsg}}</p>
+      </div>
+      <div *ngIf = "utility.isEnabled('signup.lastName')">
+        <label for="lname"><b>{{utility.getLabel('LNAME')}}</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lname" [(ngModel)]="user.lastName" (blur) = "lnameErrorMsg = utility.validateField('signup.lastName',user.lastName)">
+        <p class="errormsg">{{lnameErrorMsg}}</p>
+      </div>
+      <div *ngIf = "utility.isEnabled('signup.phoneNumber')">
+        <label for="phone"><b>{{utility.getLabel('PHONE')}}</b></label>
+        <input type="text" placeholder="Enter Phone number" name="phone" [(ngModel)]="user.phoneNumber" (blur) = "phoneErrorMsg = utility.validateField('signup.phoneNumber',user.phoneNumber)">
+        <p class="errormsg">{{phoneErrorMsg}}</p>
+      </div>
+      <div *ngIf = "utility.isEnabled('signup.dob')">
+        <label for="dob"><b>{{utility.getLabel('DOB')}}</b></label>
+        <input type="date" placeholder="Select Date of Birth" name="dob" [(ngModel)]="user.dob" (blur) = "dobErrorMsg = utility.validateField('signup.dob',user.dob)">
+        <p class="errormsg">{{dobErrorMsg}}</p>
+      </div>
+      <div *ngIf = "utility.isEnabled('signup.email')">
+        <label for="uname"><b>{{utility.getLabel('EMAIL')}}</b></label>
+        <input type="text" placeholder="Enter Email" name="uname" [(ngModel)]="user.email" (blur) = "emailErrorMsg = utility.validateField('signup.email',user.email)">
+        <p class="errormsg">{{emailErrorMsg}}</p>
+      </div>
+      <div *ngIf = "utility.isEnabled('signup.password')">
+        <label for="psw"><b>{{utility.getLabel('PWD')}}</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="user.password" (blur) = "pwdErrorMsg = utility.validateField('signup.password',user.password)">
+        <p class="errormsg">{{pwdErrorMsg}}</p>
+      </div>
+      <button class="submit-btn" (click) = "onSubmit()"><b>{{utility.getLabel('SIGNUPL')}}</b></button><br><br>
+      <p style="text-align: center;">{{utility.getLabel('ALREADY_MEM')}}<a (click) = "routeToLogin()">{{utility.getLabel('CLICK_TO_LOGIN')}}</a></p>
+      
+      <!-- <a (click)="routeToSignUp()">Click here to sign up</a> -->
+    </div>
+</div>
+
+<app-ui-modals #uimodals></app-ui-modals>

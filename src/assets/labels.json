@@ -1,0 +1,17 @@
+{
+    "LOGIN_TITLE": "HiDubai Login",
+    "EMAIL": "Email",
+    "NOT_A_MEM":"Not yet member? ",
+    "PWD": "Password",
+    "LOGIN": "Login",
+    "SIGNUP":"Signup Now",
+    "SIGNUP_TITLE":"HiDubai Signup",
+    "FNAME":"First Name",
+    "LNAME":"Last Name",
+    "PHONE":"Phone Number",
+    "DOB":"Date of Birth",
+    "SIGNUPL": "Sign Up",
+    "CLICK_TO_LOGIN": "Click here to Login",
+    "ALREADY_MEM": "Already member? ",
+    "OK": "OK"
+}

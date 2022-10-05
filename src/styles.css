@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+body{ 
+    background-color: purple;
+    padding: 3%;
+}
+h4{
+  color: purple;
+}
+.title{
+    size: 20%;
+    font-size: 20px;
+    color: purple;
+}
+label{
+  color: purple;
+}
+.errormsg{
+    color: red;
+}
+a{
+    cursor: pointer;
+}
+.modal{
+    text-align: center;
+}
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+  }
+
+  input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+  }
+  input[type=text]:focus, input[type=password]:focus, input[type=date]:focus{
+    border: solid 1px purple;
+  }
+  .signup-btn{
+    background-color:teal;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+.btn-info{
+  background-color: purple;
+}
+.submit-btn {
+    background-color: purple;
+    background-image: linear-gradient(to bottom right, purple, PaleVioletRed );
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .submit-btn:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: white;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .container {
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      background-color: white;
+    }
+  }
+  #login-form{
+    margin-top: 130px;
+  }
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }

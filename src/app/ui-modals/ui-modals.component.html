@@ -1,0 +1,76 @@
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':errorModal}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"> <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+            {{errorTitle}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{errorMsg}}</p>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" 
+                (click)="closeErrorPopup()">
+                {{utility.getLabel('OK')}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':successModal}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"> <i class="fa fa-check" style="color: green;" aria-hidden="true"></i>
+            {{successTitle}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{successMsg}}</p>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" 
+                (click)="closeSuccessPopup()">
+                {{utility.getLabel('OK')}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':registeredModal}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"> <i class="fa fa-check" style="color: green;" aria-hidden="true"></i>
+            {{successTitle}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{successMsg}}</p>
+        <a href="/hidubai-ui">{{utility.getLabel('CLICK_TO_LOGIN')}}</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" 
+                (click)="closeRegisteredPopup()">
+                {{utility.getLabel('OK')}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
