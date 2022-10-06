@@ -13,5 +13,6 @@
     "SIGNUPL": "Sign Up",
     "CLICK_TO_LOGIN": "Click here to Login",
     "ALREADY_MEM": "Already member? ",
-    "OK": "OK"
+    "OK": "OK",
+    "CON_PWD": "Confirm Password"
 }

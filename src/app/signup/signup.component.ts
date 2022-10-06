@@ -11,7 +11,7 @@ import { Utility } from '../utility/utility';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  fnameErrorMsg; lnameErrorMsg; phoneErrorMsg;dobErrorMsg; emailErrorMsg; pwdErrorMsg;
+  fnameErrorMsg; lnameErrorMsg; phoneErrorMsg;dobErrorMsg; emailErrorMsg; pwdErrorMsg; conpasswordErrorMsg;
   @ViewChild('uimodals', { static: false }) uimodals: UiModalsComponent;
   constructor(public router: Router, public service: Service, public utility: Utility) { }
   user = new User();
@@ -55,6 +55,8 @@ export class SignupComponent implements OnInit {
     this.dobErrorMsg = this.utility.validateField('signup.dob',this.user.dob);
     this.emailErrorMsg = this.utility.validateField('signup.email',this.user.email);
     this.pwdErrorMsg = this.utility.validateField('signup.password',this.user.password)
+    this.conpasswordErrorMsg = this.utility.validateField('signup.password',this.user.conpassword)
+    
   }
 
   clearData(){
