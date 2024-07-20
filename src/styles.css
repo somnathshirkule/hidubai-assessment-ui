@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{ 
-    background-color: purple;
+    background-color: white;
     padding: 3%;
 }
 h4{
@@ -74,7 +74,7 @@ a{
     padding: 20px;
     border-radius: 10px;
     width: 40%;
-    background-color: white;
+    background-color: rgb(241, 241, 241);
   }
   
   span.psw {
@@ -97,7 +97,7 @@ a{
       padding: 20px;
       border-radius: 10px;
       width: 80%;
-      background-color: white;
+      background-color: rgb(241, 241, 241);
     }
   }
   #login-form{
